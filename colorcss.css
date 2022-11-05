@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+i{
+    position: relative;
+    height: 100px;
+    width: 60px;
+    margin: 1px;
+    animation: animate 4s linear infinite;
+    animation-delay: calc(0.5s * var(--i));
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        background-color: green;
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+
+}
+
